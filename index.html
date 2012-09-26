@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ScrewDefaultButtons 2</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="js/jquery.screwdefaultbuttonsV2.js"></script>
+	<script>
+		
+		$(function(){
+				
+	//			$('input:button').toggle(function(){
+	//				$('input:checkbox').prop("checked", true);
+	//			}, function(){
+	//				$('input:checkbox').prop("checked", false);
+	//			});
+	
+			$('input:button').on("click", function(){
+					
+				$('#small').screwDefaultButtons('disable');
+				
+			});
+				
+				
+				$('#small').on("change" ,function(){
+						console.log('changed!');
+				});
+		
+			$('input:checkbox').screwDefaultButtons({image: 'url(images/checkboxRed.jpg)'});
+			//$('input:radio').screwDefaultButtons();
+			$('#small').screwDefaultButtons({image: 'url(images/checkbox.jpg)'});
+			$('#medium').screwDefaultButtons({image: 'url(images/checkboxRed.jpg)'});
+			$('#large').screwDefaultButtons({image: 'url(images/checkboxGreen.jpg)'});
+			//$('input:text').screwDefaultButtons();
+						
+		});
+		
+		
+	</script>
+	
+</head>
+<body>
+
+	<input type="button" name="check" value="Checkbox" /><br/>
+	<label for="newsletter">Sign-up</label>
+	<input type="checkbox" name="newsletter" data-sdb-image="url('images/checkboxGreen.jpg')"  value="true" id="newsletter" checked="checked" /><br/>
+	<input type="checkbox" name="newsletter" value="true" /><br/>
+	<input type="checkbox" name="newsletter" value="true"/><br/><br/><br/><br/>
+	<label for="small">Small</label>
+	<input type="radio" name="size" value="small" id="small" checked="checked"/><br />
+	<label for="medium">Medium</label>
+	<input type="radio" name="size" value="medium" id="medium" /><br />
+	<label for="large">Large</label>
+	<input type="radio" name="size" value="large" id="large" /><br />
+	<br/><br/><br/><br/>
+	<input type="radio" name="model" value="small" class="someClass"/><br />
+	<input type="radio" name="model" value="medium" /><br />
+	<input type="radio" name="model" value="large" /><br />
+	<input type="text" name="name"/>
+	
+	
+</body>
+</html>
