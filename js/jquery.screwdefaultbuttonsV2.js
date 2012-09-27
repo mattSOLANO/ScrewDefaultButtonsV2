@@ -15,7 +15,7 @@
 	    init : function(options) {
 	    
 	    	var defaults = $.extend( {
-	    	      image:	'url("images/checkbox.jpg")',
+	    	      image:	null,
 	    	      width:	50,
 	    	      height:	50,
 	    	      disabled:	false		
@@ -31,6 +31,9 @@
 		    		$thisImage = dataImage;
 		    	}
 		    	
+		    	if (!$thisImage){
+		    		 $.error( 'There is no image assigned for ScrewDefaultButtons' );
+		    	}
 		    	
 		    	$this.wrap('<div >').css({'display': 'none'});
 		    	
@@ -47,7 +50,6 @@
 		    		height: defaults.height,
 		    		cursor: 'pointer'
 		    	});
-		    	
 		    	
 		    	var uncheckedPos = 0;
 		    	var checkedPos = -(defaults.height);

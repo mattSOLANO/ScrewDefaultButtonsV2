@@ -30,11 +30,8 @@
 						console.log('changed!');
 				});
 		
-			$('input:checkbox').screwDefaultButtons({image: 'url(images/checkboxRed.jpg)'});
-			//$('input:radio').screwDefaultButtons();
-			$('#small').screwDefaultButtons({image: 'url(images/checkbox.jpg)'});
-			$('#medium').screwDefaultButtons({image: 'url(images/checkboxRed.jpg)'});
-			$('#large').screwDefaultButtons({image: 'url(images/checkboxGreen.jpg)'});
+			$('input:checkbox').screwDefaultButtons({image: 'url("images/checkbox.jpg")', width: 85, height: 85});
+			$('input:radio').screwDefaultButtons({image: 'url("images/radio.jpg")', width: 85, height: 85});
 			//$('input:text').screwDefaultButtons();
 						
 		});
@@ -47,7 +44,7 @@
 
 	<input type="button" name="check" value="Checkbox" /><br/>
 	<label for="newsletter">Sign-up</label>
-	<input type="checkbox" name="newsletter" data-sdb-image="url('images/checkboxGreen.jpg')"  value="true" id="newsletter" checked="checked" /><br/>
+	<input type="checkbox" name="newsletter" value="true" id="newsletter" checked="checked" /><br/>
 	<input type="checkbox" name="newsletter" value="true" /><br/>
 	<input type="checkbox" name="newsletter" value="true"/><br/><br/><br/><br/>
 	<label for="small">Small</label>
