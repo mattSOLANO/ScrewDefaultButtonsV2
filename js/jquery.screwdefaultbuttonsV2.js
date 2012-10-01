@@ -75,12 +75,12 @@
 		    	$this.on('resetBackground', function(){
 		    		if ($this.is(':checked')){
 		    			$thisParent.css({
-		    				'background-position-y': checkedPos 
+		    				backgroundPosition: '0 ' + checkedPos + "px" 
 		    			});
 		    		}
 		    		else {
 		    			$thisParent.css({
-		    				'background-position-y':  uncheckedPos
+		    				backgroundPosition: '0 ' + uncheckedPos + "px"
 		    			});
 		    		}
 		    	});
@@ -103,13 +103,13 @@
 			    		if ($this.prop('checked')){
 			    			$this.prop("checked", false);
 			    			$thisParent.css({
-			    				'background-position-y': uncheckedPos 
+			    				backgroundPosition: '0 ' + uncheckedPos + "px" 
 			    			});
 			    		}
 			    		else {
 			    			$this.prop("checked", true);
 			    			$thisParent.css({
-			    				'background-position-y':  checkedPos
+			    				backgroundPosition:  '0 ' + checkedPos + "px"
 			    			});
 			    		}
 			    	});
@@ -132,13 +132,13 @@
 			    		if ($this.prop('checked')){
 			    			$this.prop("checked", false);
 			    				$thisParent.css({
-			    					'background-position-y':  uncheckedPos
+			    					backgroundPosition:  '0 ' + uncheckedPos + "px"
 			    				});
 			    		}
 			    		else {
 			    			$this.prop("checked", true);
 				    			$thisParent.css({
-				    				'background-position-y':  checkedPos
+				    				backgroundPosition:  '0 ' + checkedPos + "px"
 				    			});
 			    			
 			    			var otherRadioBtns = $('input[name="'+ $thisName +'"]').not($this);
@@ -148,7 +148,7 @@
 			    	
 			    	$this.on('radioSwitch', function(){
 			    		$thisParent.css({
-			    			'background-position-y': uncheckedPos 
+			    			backgroundPosition: '0 ' + uncheckedPos  + "px"
 			    		});
 			    	
 			    	});
