@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ScrewDefaultButtons  |  Examples</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="js/jquery.screwdefaultbuttonsV2.js"></script>
+	
+	
+	<script type="text/javascript">
+		$(function(){
+		
+			$('input:radio').screwDefaultButtons({
+				image: 'url("images/radioSmall.jpg")',
+				width: 43,
+				height: 43
+			});
+			
+			$('input:checkbox').screwDefaultButtons({
+				image: 'url("images/checkboxSmall.jpg")',
+				width: 43,
+				height: 43
+			});
+		
+		});
+	</script>
+	
+	<style>
+	
+		body {
+			font-family: tahoma, ariel, sans-serif;
+			letter-spacing: 0.1em;
+			color: #444;
+		}
+		
+		.styledRadio, .styledCheckbox {
+			display: inline-block;
+		}
+		
+		
+		.example {
+			padding: 50px 0 0 20px;
+		}
+		
+		label {
+			line-height: 43px;
+			font-size: 20px;
+			vertical-align: 14px;
+			padding-right: 20px;
+		}
+		
+		button{
+			display: block;
+		}
+	
+	</style>
+	
+</head>
+<body>
+	<h1>ScrewDefaultButtons - Examples</h1>
+	<div class="example">
+		<h2>Regular set of Radio Buttons</h2>
+		
+		<input type="radio" name="ex1" id="ex1_a">
+		<label for="ex1_a">A</label>
+		
+		<input type="radio" name="ex1" id="ex1_b">
+		<label for="ex1_b">B</label>
+		
+		<input type="radio" name="ex1" id="ex1_c">
+		<label for="ex1_c">C</label>
+		
+	</div>
+	
+	<div class="example">
+		<h2>Regular set of Checkboxes</h2>
+		
+		<input type="checkbox" name="ex2_a" id="ex2_a">
+		<label for="ex2_a">A</label>
+		
+		<input type="checkbox" name="ex2_b" id="ex2_b">
+		<label for="ex2_b">B</label>
+		
+		<input type="checkbox" name="ex2_c" id="ex2_c">
+		<label for="ex2_c">C</label>
+		
+	</div>
+	
+	<div class="example">
+		<h2>Checked by default</h2>
+		
+		<input type="radio" name="ex3_a" checked="checked">
+		<input type="checkbox" name="ex3_b" checked="checked">
+		
+	</div>
+	
+	<div class="example">
+		<h2>Disabled by default</h2>
+		
+		<input type="radio" name="ex4_a" disabled="disabled">
+		<input type="checkbox" name="ex4_b" disabled="disabled">
+		
+	</div>
+	
+	<div class="example">
+		<h2>Using Check Command</h2>
+		
+		<button class="selectAll">Select All</button>
+		
+		<input type="checkbox" name="ex5_a" class="ex5">
+		<input type="checkbox" name="ex5_b" class="ex5">
+		<input type="checkbox" name="ex5_c" class="ex5">
+		<input type="checkbox" name="ex5_d" class="ex5">
+		
+		<script>
+			$('.selectAll').click(function(){
+				$('.ex5').screwDefaultButtons('check');
+			});
+		</script>
+		
+	</div>
+	
+	<div class="example">
+		<h2>Using Uncheck Command</h2>
+		
+		<button class="clear">Clear</button>
+		
+		<input type="checkbox" name="ex6_a" class="ex6">
+		<input type="checkbox" name="ex6_b" class="ex6" checked="checked">
+		<input type="checkbox" name="ex6_c" class="ex6">
+		<input type="checkbox" name="ex6_d" class="ex6"  checked="checked">
+		
+		<script>
+			$('.clear').click(function(){
+				$('.ex6').screwDefaultButtons('uncheck');
+			});
+		</script>
+		
+	</div>
+	
+	<div class="example">
+		<h2>Using Toggle Command</h2>
+		
+		<button class="toggle">Toggle</button>
+		
+		<input type="checkbox" name="ex7_a" class="ex7">
+		
+		<script>
+			$('.toggle').click(function(){
+				$('.ex7').screwDefaultButtons('toggle');
+			});
+		</script>
+		
+		
+	</div>
+	
+	<div class="example">
+		<h2>Using Disable/Enable Command</h2>
+		
+		<button class="disable">Disable</button>
+		<button class="enable">Enable</button>
+		
+		<input type="checkbox" name="ex8_a" class="ex8">
+		
+		<script>
+			$('.disable').click(function(){
+				$('.ex8').screwDefaultButtons('disable');
+			});
+			
+			$('.enable').click(function(){
+				$('.ex8').screwDefaultButtons('enable');
+			});
+		</script>
+		
+	</div>
+	
+	
+	<div class="example">
+		<h2>Data Attribute for different image</h2>
+		
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox" data-sdb-image="url('images/checkboxSmall_Blue.jpg')">
+		<input type="checkbox">
+		
+	</div>
+	
+	
+	
+	
+</body>
+</html>
