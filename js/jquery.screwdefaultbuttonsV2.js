@@ -154,6 +154,15 @@
 			    	});
 			    }
 			    
+			    if( $.browser.version == 7.0 || $.browser.version == 8.0 ){
+			    	alert('test');
+			    	$('label').on("click", function(){
+			    		var labelFor = $(this).attr('for');
+			    		var buttonForMatch = $('input').filter('#' + labelFor);
+			    		buttonForMatch.parent().trigger('click');
+			    	});
+			    }
+			    
 			});
 	    	
 	    },
