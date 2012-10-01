@@ -7,7 +7,7 @@ A simple jQuery plugin that allows you to replace default radio buttons and chec
 Be sure to link to jQuery and then your copy of the ScrewDefaultButtons plugin. Here is an example:
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="js/jquery.screwDefaultButtons.js"></script>
+	<script src="js/jquery.screwDefaultButtonsV2.min.js"></script>
 	
 Next, target the checkbox and or radio buttons you would like to make awesome. Here you must define the replacement sprite image, the height of one button and the width of the button.
 
@@ -19,7 +19,7 @@ Next, target the checkbox and or radio buttons you would like to make awesome. H
 		});
 	</script
 	
-**Note -** It's suggested that if you are working with radio buttons AND checkboxes, you should use a separate call for each. This allows for a different image for each button.
+**Note -** It's suggested that if you are working with radio buttons AND checkboxes, you should use a separate call for each. This allows for a different image for each button type.
 
 ### Sprites
 Here are some suggestions for setting up your image sprites
