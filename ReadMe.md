@@ -19,7 +19,7 @@ Next, target the checkbox and or radio buttons you would like to make awesome. H
 		});
 	</script
 	
-**Note - ** It's suggested that if you are working with radio buttons AND checkboxes, you should use a separate call for each. This allows for a different image for each button.
+**Note -** It's suggested that if you are working with radio buttons AND checkboxes, you should use a separate call for each. This allows for a different image for each button.
 
 ### Sprites
 Here are some suggestions for setting up your image sprites
