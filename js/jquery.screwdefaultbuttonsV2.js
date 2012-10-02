@@ -1,11 +1,11 @@
 /*!
- * ScrewDefaultButtons v2.0.0
+ * ScrewDefaultButtons v2.0.4
  * http://screwdefaultbuttons.com/
  *
  * Licensed under the MIT license.
  * Copyright 2012 Matt Solano http://mattsolano.com
  *
- * Date: Wed September 26 2012 
+ * Date: Tue October 2 2012 
  */
 
 ;(function( $, window, document, undefined ){ 
