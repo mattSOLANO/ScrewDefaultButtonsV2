@@ -51,6 +51,8 @@
 		    		cursor: 'pointer'
 		    	});
 		    	
+		    	
+		    	
 		    	var uncheckedPos = 0;
 		    	var checkedPos = -(defaults.height);
 		    	if ($this.is(':disabled')){
@@ -155,11 +157,10 @@
 			    }
 			    
 			    if( $.browser.version == 7.0 || $.browser.version == 8.0 ){
-			    	alert('test');
-			    	$('label').on("click", function(){
-			    		var labelFor = $(this).attr('for');
-			    		var buttonForMatch = $('input').filter('#' + labelFor);
-			    		buttonForMatch.parent().trigger('click');
+			    	var $thisId = $(this).attr('id');
+			    	var $thisLabel = $('label[for="' + $thisId + '"]');
+			    	$thisLabel.on('click', function(){
+			    		$thisParent.trigger('click');
 			    	});
 			    }
 			    
