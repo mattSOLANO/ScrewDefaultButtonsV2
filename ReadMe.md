@@ -25,7 +25,7 @@ Next, target the checkbox and or radio buttons you would like to make awesome. H
 Here are some suggestions for setting up your image sprites
 - They need to be laid out vertically
 - Button states must be the same height and width
-- Currently, 4 states are supported and must me set up in this order (top to bottom):
+- Currently, 4 states are supported and must be set up in this order (top to bottom):
 	- Unchecked
 	- Checked
 	- Disabled(unchecked)
