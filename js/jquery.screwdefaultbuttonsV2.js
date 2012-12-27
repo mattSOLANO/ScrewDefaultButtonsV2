@@ -154,6 +154,12 @@
 			    		});
 			    	
 			    	});
+			    	
+			    	var $thisId = $(this).attr('id');
+			    	var $thisLabel = $('label[for="' + $thisId + '"]');
+			    	$thisLabel.on('click', function(){
+			    		$thisParent.trigger('click');
+			    	});
 			    }
 			    
 			    if( $.browser.version == 7.0 || $.browser.version == 8.0 ){
