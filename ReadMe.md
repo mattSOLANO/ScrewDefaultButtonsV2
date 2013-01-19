@@ -81,4 +81,4 @@ Disables the targeted button or buttons.
 #### 'enable'
 Enables the targeted button or buttons.
 
-	$(input:checkbox).screwDefaultButtons('disable');
+	$(input:checkbox).screwDefaultButtons('enable');
