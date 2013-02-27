@@ -6,7 +6,6 @@ A simple jQuery plugin that allows you to replace default radio buttons and chec
 ## How it works
 Be sure to link to jQuery and then your copy of the ScrewDefaultButtons plugin. Here is an example:
 
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/jquery.screwDefaultButtonsV2.min.js"></script>
 	
