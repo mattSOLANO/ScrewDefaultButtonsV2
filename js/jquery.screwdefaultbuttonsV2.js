@@ -43,7 +43,6 @@
 				var $thisParent = $this.parent('div');
 
 				var inputId = $this.attr('id');
-				console.log('inputId: ', inputId);
 				var assocLabel = inputId && $('label[for="' + inputId + '"]');
 				if (assocLabel) {
 					$thisParent.attr('title', assocLabel.text());
