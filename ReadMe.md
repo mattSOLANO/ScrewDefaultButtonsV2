@@ -17,7 +17,7 @@ Next, target the checkbox and or radio buttons you would like to make awesome. H
 			width: 85,
 			height: 85
 		});
-	</script
+	</script>
 	
 **Note -** It's suggested that if you are working with radio buttons AND checkboxes, you should use a separate call for each. This allows for a different image for each button type.
 
